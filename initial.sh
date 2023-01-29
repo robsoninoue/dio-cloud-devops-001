@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Create dir
 
 mkdir publico
@@ -13,15 +15,15 @@ groupadd grp_sec
 
 # Create users
 
-useradd carlos
-useradd maria
-useradd joao
-useradd debora
-useradd sebastiana
-useradd roberto
-useradd josefina
-useradd amanda
-useradd rogerio
+useradd carlos -p $(openssl passwd -crypt Senha123)
+useradd maria -p $(openssl passwd -crypt Senha123)
+useradd joao -p $(openssl passwd -crypt Senha123)
+useradd debora -p $(openssl passwd -crypt Senha123)
+useradd sebastiana -p $(openssl passwd -crypt Senha123)
+useradd roberto -p $(openssl passwd -crypt Senha123)
+useradd josefina -p $(openssl passwd -crypt Senha123)
+useradd amanda -p $(openssl passwd -crypt Senha123)
+useradd rogerio -p $(openssl passwd -crypt Senha123)
 
 # Add user to a group
 
